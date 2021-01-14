@@ -1,0 +1,363 @@
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Euclid Circular B", sans-serif;
+}
+
+.telNumber {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  margin-right: 32px;
+  text-decoration: none;
+}
+
+.formButton {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  background: #FFDF31;
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.formButton:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+.blockTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41px;
+  color: #000000;
+  margin-top: 70px;
+  margin-bottom: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logoText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41px;
+  color: #000000;
+  margin-left: 16px;
+}
+
+.shareBtn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41px;
+  color: #000000;
+  text-decoration: none;
+}
+.shareBtn:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+.header {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+}
+
+.mainBlock {
+  background: #F5F5F5;
+}
+.mainBlock__slider {
+  position: relative;
+}
+
+.mainSlider-swiper-slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.mainSlider-swiper-slide__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 66px;
+  color: #000000;
+  max-width: 300px;
+  margin-top: 48px;
+}
+
+.mainSlider-swiper-buttons {
+  position: absolute;
+  bottom: 48px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.mainSlider-swiper-buttons__wrapper {
+  display: flex;
+  outline: none;
+}
+
+.mainSlider-swiper-button-prev {
+  transform: scale(-1, 1);
+  padding: 10px 12px 8px 8px;
+}
+
+.mainSlider-swiper-button-next {
+  padding: 10px 8px 8px 12px;
+}
+
+.mainSlider-swiper-button-prev-next:hover {
+  box-shadow: 0 0 5px 2px gray;
+  transition: all 0.5s;
+}
+
+.mainSlider-swiper-buttons__lineBetween {
+  display: block;
+  width: 1px;
+  background-color: #F5F5F5;
+}
+
+.mainSlider-swiper-button-prev-next {
+  outline: none;
+  cursor: pointer;
+}
+
+.mainSlider-swiper-slide__img {
+  -webkit-clip-path: circle(57.3% at 51% 50%);
+          clip-path: circle(57.3% at 51% 50%);
+  object-fit: contain;
+  vertical-align: bottom;
+}
+
+.mainSlider-swiper-slide__imgBox {
+  position: relative;
+}
+
+.mainSlider-swiper-slide__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 1000px;
+  padding: 12px 16px;
+}
+
+.mainSlider-swiper-slide__work {
+  top: 55px;
+  right: 116px;
+}
+
+.mainSlider-swiper-slide__name {
+  bottom: 55px;
+  left: 130px;
+}
+
+.vacancyBlock__container {
+  position: relative;
+}
+
+.vacancySlider-swiper-buttons {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 160px;
+}
+
+.vacancySlider-swiper-button-prev {
+  transform: scale(-1, 1);
+}
+
+.vacancySlider-swiper-button-next {
+  padding-right: 0;
+}
+
+.vacancySlider-swiper-button-prev-next {
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+}
+.vacancySlider-swiper-button-prev-next:hover {
+  box-shadow: 0 0 5px 2px gray;
+  transition: all 0.5s;
+}
+
+.vacancySlider-swiper-slide__work {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 1000px;
+  display: inline-block;
+  padding: 12px 16px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.vacancySlider-swiper-slide__img {
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-width: 416px;
+  min-height: 416px;
+  opacity: 1;
+}
+
+.vacancySlider-swiper-slide {
+  position: relative;
+  background: #F5F5F5;
+  border-radius: 8px;
+  max-height: 482px;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.vacancySlider-swiper-slide:hover .vacancySlider-swiper-slide__overlay {
+  top: 0;
+}
+.vacancySlider-swiper-slide:hover .vacancySlider-swiper-slide__work {
+  position: absolute;
+  z-index: 1;
+}
+.vacancySlider-swiper-slide:hover .vacancySlider-swiper-slide__img {
+  margin-top: 78px;
+}
+
+.vacancySlider-swiper-slide__overlay {
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  height: 100%;
+  background: #FFDF31;
+  transition: all 0.7s;
+  display: flex;
+  align-items: flex-end;
+}
+.vacancySlider-swiper-slide__overlay-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: flex-end;
+  color: #000000;
+  margin: 0 24px 24px 24px;
+}
+
+.instaBlock__gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.instaBlock__bigBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 540px;
+  height: 540px;
+  align-items: normal;
+}
+.instaBlock__bigImage {
+  background: #F5F5F5;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.instaBlock__smallImage {
+  background: #F5F5F5;
+  border-radius: 8px;
+  width: 47%;
+  height: 47%;
+}
+.instaBlock__showMoreBtn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  background: #F5F5F5;
+  border-radius: 8px;
+  padding: 12px 0;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.instaBlock__showMoreBtn:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+.geoBlock {
+  margin-bottom: 72px;
+}
+
+.footer {
+  background: #F5F5F5;
+  padding-top: 72px;
+}
+.footer__wrapper {
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+.footer__content {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__iconBox {
+  display: flex;
+}
+.footer__iconBox-faceIcon {
+  margin-right: 8px;
+}
+.footer__icon {
+  cursor: pointer;
+}
+.footer__icon:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+.footer__bottomWrapper {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+.footer__bottomWrapper-text {
+  margin-right: 247px;
+}
