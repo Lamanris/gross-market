@@ -3,7 +3,7 @@ ymaps.ready(init);
 
 function init () {
     myMap = new ymaps.Map('map', {
-        center: [55.76, 37.64], // Москва
+        center: [55.754365, 37.623808], // Москва
         searchControlProvider: 'yandex#search',
         zoom: 12,
         controls:[]
@@ -65,9 +65,13 @@ function init () {
         }
     });
 
-
     ButtonLayout = ymaps.templateLayoutFactory.createClass([
         '<div title="{{ data.title }}" class="map-btn">',
+        '<span class="map-btn__text">{{ data.content }}</span>',
+        '</div>'
+    ].join(''))
+    ButtonLayout1 = ymaps.templateLayoutFactory.createClass([
+        '<div title="{{ data.title }}" class="map-btn map-btn-fullscreen">',
         '<span class="map-btn__text">{{ data.content }}</span>',
         '</div>'
     ].join(''))
@@ -89,6 +93,10 @@ function init () {
         }
     });
 
+    button.events.add('click', function () {
+        alert('Вы нажали на кнопку!');
+    });
+
     button2 = new ymaps.control.Button({
         data: {
             content: "физлица",
@@ -106,25 +114,70 @@ function init () {
                 left: '24px'
             }});
 
-    button.events.add('click', function () {
-        alert('Вы нажали на кнопку!');
-    });
+
     button2.events.add('click', function () {
         alert('Вы нажали на кнопку!');
     });
 
-    fullscreenControl = new ymaps.control.FullscreenControl({
+    var fullscreenControl = new ymaps.control.Button({
+        data: {
+            iconType: 'expand', title: "Развернуть/свернуть карту",
+            content: "показать всё"
+        },
         options: {
-            layout: ButtonLayout
+            selectOnClick: false,
+            float: "right",
+            layout: ButtonLayout1
         }
     });
-    myMap.controls.add('fullscreenControl', {
+    fullscreenControl.events.add("press" ,function (){
+        if (!fullscreenControl.isSelected())
+            myMap.container.enterFullscreen();
+        else
+            myMap.container.exitFullscreen();
+    });
+    myMap.container.events.add("fullscreenenter" ,function() {
+        fullscreenControl.data.set({iconType:"collapse"});
+        fullscreenControl.select();
+        console.log('fullscreenenter');
+    });
+    myMap.container.events.add("fullscreenexit" ,function() {
+        fullscreenControl.data.set({iconType:"expand"});
+        fullscreenControl.deselect();
+        console.log('fullscreenexit');
+    });
+    myMap.controls.add(fullscreenControl, {
         position: {
             bottom: '24px',
             left: '24px'
         }
     });
-
-
-
+    // Создаём макет содержимого.
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    )
+    function putPlacemark (coords) {
+        coords.map((el, ind) => {
+            myPlacemark = new ymaps.Placemark(el, {
+                hintContent: 'Собственный значок метки',
+                balloonContent: el
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: './img/mapMark.png',
+                // Размеры метки.
+                iconImageSize: [44, 44],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0]
+            })
+            console.log(el)
+            myMap.geoObjects
+                .add(myPlacemark)
+        })
+    }
+    let marksCoords = [[55.757932, 37.615805], [55.753309, 37.577504],[55.765048, 37.550795],[55.739460, 37.656561],[55.732913, 37.701081],[55.761982, 37.644150],[55.765958, 37.653827],[55.778138, 37.591923],[55.769260, 37.693850],[55.783972, 37.527293] ]
+    putPlacemark(marksCoords)
 }
