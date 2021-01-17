@@ -1,18 +1,292 @@
+/* Landscape tablets and medium desktops */
 @media (max-width: 1200px) {
   .container {
-    max-width: 940px;
-  }
-}
-@media (max-width: 950px) {
-  .container {
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
   }
 
   .mainBlock__container {
+    margin: 0 40px;
+  }
+
+  .geoBlock__container {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 1070px) {
+  .mainBlock__container {
+    margin: 0;
+  }
+
+  .mainSlider-swiper-slide__title {
+    margin-left: 40px;
+  }
+
+  .mainSlider-swiper-buttons {
+    left: 40px;
+  }
+
+  .mainSlider-swiper-slide__img {
+    margin-right: -60px;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (max-width: 992px) {
+  .mainSlider-swiper-slide__img {
+    -webkit-clip-path: circle(50% at 58% 50%);
+            clip-path: circle(50% at 58% 50%);
+    margin-right: -150px;
+  }
+
+  .mainSlider-swiper-slide1__name {
+    left: 180px;
+  }
+
+  .mainSlider-swiper-slide1__work {
+    right: 40px;
+  }
+
+  .mainSlider-swiper-slide2__name {
+    left: 180px;
+  }
+
+  .mainSlider-swiper-slide2__work {
+    right: 40px;
+  }
+
+  .vacancySlider-swiper-buttons {
+    display: none;
+  }
+
+  .vacancySlider-swiper-slide__img {
+    max-height: 347px;
+    min-height: 347px;
+  }
+
+  .instaBlock__bigBox-mobile {
+    display: inline-block;
+  }
+
+  .instaBlock__bigBox-laptop {
+    display: none;
+  }
+
+  .geoBlock {
+    margin-bottom: 0;
+  }
+
+  .geoBlock__container {
+    margin: 0;
+  }
+
+  .geoBlock__title {
+    margin-left: 40px;
+  }
+
+  .footer__bottomWrapper-text {
+    margin-right: 35px;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 765px) {
+  .header__contacts {
+    display: none;
+  }
+
+  .header__tel-number {
+    display: none;
+  }
+
+  .header__form-btn {
+    display: none;
+  }
+
+  .header__phone-icon {
+    display: block;
+  }
+
+  .mainSlider-swiper-slide {
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .mainSlider-swiper-slide__title {
+    font-size: 64px;
+    max-width: 80%;
+    margin-bottom: 45px;
+  }
+
+  .mainSlider-swiper-slide__img {
+    -webkit-clip-path: circle(58.3% at 50% 77%);
+            clip-path: circle(58.3% at 50% 77%);
     margin-right: 0;
   }
 
-  .vacancyBlock__container {
+  .mainSlider-swiper-slide1__name {
+    left: 100px;
+  }
+
+  .mainSlider-swiper-slide1__work {
+    right: 180px;
+  }
+
+  .mainSlider-swiper-slide2__name {
+    left: 180px;
+  }
+
+  .mainSlider-swiper-slide2__work {
+    right: 100px;
+  }
+
+  .mainSlider-swiper-slide__imgBox {
+    text-align: center;
+  }
+
+  .mainSlider-swiper-buttons {
+    display: none;
+  }
+
+  .vacancySlider-swiper-slide__img {
+    min-height: 300px;
+    max-height: 300px;
+  }
+
+  .footer__share-btn {
+    display: none;
+  }
+
+  .footer__bottomWrapper-text {
     margin-right: 0;
+  }
+}
+@media (max-width: 550px) {
+  .footer__bottomWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .footer__bottomWrapper-text {
+    margin-bottom: 24px;
+  }
+}
+/* Portrait phones and smaller */
+@media (max-width: 520px) {
+  .container {
+    margin: 0 15px;
+  }
+
+  .block-title {
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+
+  .header {
+    position: relative;
+    z-index: 5;
+    background-color: white;
+  }
+
+  .mobile-form-btn-wrap {
+    display: block;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    top: 18px;
+  }
+
+  .mobile-form-btn {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .mainSlider-swiper-slide__title {
+    font-size: 48px;
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .mainSlider-swiper-slide__img {
+    margin-left: -60px;
+  }
+
+  .mainSlider-swiper-slide1__name {
+    left: 20px;
+  }
+
+  .mainSlider-swiper-slide1__work {
+    right: 80px;
+  }
+
+  .mainSlider-swiper-slide2__name {
+    left: 80px;
+  }
+
+  .mainSlider-swiper-slide2__work {
+    right: 20px;
+  }
+
+  .mainSlider-swiper-slide__imgBox {
+    text-align: center;
+  }
+
+  .vacancySlider-swiper-slide__img {
+    max-height: 274px;
+    min-height: 274px;
+  }
+
+  .geoBlock__title {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .footer__content {
+    display: block;
+  }
+
+  .footer__logo {
+    margin-bottom: 24px;
+  }
+
+  .footer__logo-text {
+    font-size: 24px;
+    margin-left: 14px;
+  }
+}
+@media (max-width: 380px) {
+  .block-title {
+    font-size: 24px;
+  }
+
+  .mainSlider-swiper-slide__img {
+    margin-left: -110px;
+  }
+
+  .mainSlider-swiper-slide1__name {
+    left: 20px;
+  }
+
+  .mainSlider-swiper-slide1__work {
+    right: 10px;
+  }
+
+  .mainSlider-swiper-slide2__name {
+    left: 20px;
+  }
+
+  .mainSlider-swiper-slide2__work {
+    right: 10px;
+  }
+
+  .mainSlider-swiper-slide__imgBox {
+    text-align: center;
+  }
+}
+/* Iphone 5 */
+@media (max-width: 325px) {
+  .mainSlider-swiper-slide__title {
+    font-size: 40px;
+    margin-top: 28px;
+    margin-bottom: 25px;
   }
 }

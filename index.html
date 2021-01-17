@@ -5,34 +5,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="slider/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Document</title>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f75ec07c-34c4-45f4-a38c-680825065362" type="text/javascript"></script>
-    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
-    <script src="./js/script.js" type="text/javascript"></script>
+
 </head>
 <body>
+<div class="mobile-form-btn-wrap">
+        <a href="#" class="mobile-form-btn form-btn">заполнить анкету</a>
+</div>
 <header class="header">
     <div class="header__container container">
         <nav class="header__menu">
             <div class="header__logo logo">
                 <img src="img/logo.png" alt="logo">
-                <span class="header__logoText logoText">гросс маркет</span>
+                <span class="header__logo-text logo-text">гросс маркет</span>
+            </div>
+            <div class="header__phone-icon">
+                <a href="tel:+7 (926) 433-14-16"><img src="./img/phoneIcon.png" alt=""></a>
             </div>
             <div class="header__contacts">
-                <a href="tel:+7 (926) 433-14-16" class="header__telNumber telNumber">+7 (926) 433-14-16</a>
-                <a href="#" class="header__formButton formButton">заполнить анкету</a>
+                <a href="tel:+7 (926) 433-14-16" class="header__tel-number tel-number">+7 (926) 433-14-16</a>
+                <a href="#" class="header__form-btn form-btn">заполнить анкету</a>
             </div>
         </nav>
     </div>
 </header>
-
-<div class="mainBlock">
-    <div class="mainBlock__container container">
+<section class="mainBlock">
+    <div class="mainBlock__container">
         <div class="mainBlock__slider">
             <div class="mainSlider-swiper-buttons">
                 <div class="mainSlider-swiper-buttons__wrapper">
@@ -50,26 +53,27 @@
                         <p class="mainSlider-swiper-slide__title">У тебя к этому талант</p>
                         <div class="mainSlider-swiper-slide__imgBox">
                             <img src="img/mainBlock__img.png" class="mainSlider-swiper-slide__img" alt="photoOfAMan">
-                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide__work">пекарь</span>
-                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide__name">валентин</span>
+                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide1__work">пекарь</span>
+                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide1__name">валентин</span>
                         </div>
                     </div>
                     <div class="swiper-slide mainSlider-swiper-slide">
                         <p class="mainSlider-swiper-slide__title">У тебя всё под контролем</p>
                         <div class="mainSlider-swiper-slide__imgBox">
                             <img src="img/mainBlock__img2.png" class="mainSlider-swiper-slide__img" alt="photoOfAGirl">
-                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide__work">товаровед</span>
-                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide__name">ксения</span>
+                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide2__work">товаровед</span>
+                            <span class="mainSlider-swiper-slide__text mainSlider-swiper-slide2__name">ксения</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="vacancyBlock">
+</section>
+
+<section class="vacancyBlock">
     <div class="vacancyBlock__container container">
-        <h2 class="vacancyBlock__title blockTitle">вакансии в гросс маркете</h2>
+        <h2 class="vacancyBlock__title block-title">вакансии в гросс маркете</h2>
         <div class="vacancyBlock__slider">
             <div class="vacancySlider-swiper-buttons">
                 <div class="vacancySlider-swiper-button-prev vacancySlider-swiper-button-prev-next"><img
@@ -153,43 +157,106 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="instaBlock">
+<section class="instaBlock">
     <div class="instaBlock__container container">
-        <h2 class="instaBlock__title blockTitle">мы в инстаграме</h2>
+        <h2 class="instaBlock__title block-title">мы в инстаграме</h2>
         <div class="instaBlock__gallery">
-            <div class="instaBlock__bigBox">
-                <div class="instaBlock__bigImage"></div>
+            <div class="instaBlock__gallery-top-wrap instaBlock__gallery-wrap">
+                <div class="instaBlock__bigBox">
+                    <div class="instaBlock__content">
+                        <div class="instaBlock__img"></div>
+                    </div>
+                </div>
+                <div class="instaBlock__bigBox instaBlock__bigBox-mobile">
+                    <div class="instaBlock__content">
+                        <div class="instaBlock__img"></div>
+                    </div>
+                </div>
+                <div class="instaBlock__bigBox instaBlock__bigBox-laptop">
+                    <div class="instaBlock__content">
+                        <div class="instaBlock__bigBox-wrapper">
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="instaBlock__bigBox">
-                <div class="instaBlock__smallImage"></div>
-                <div class="instaBlock__smallImage"></div>
-                <div class="instaBlock__smallImage"></div>
-                <div class="instaBlock__smallImage"></div>
+            <div class="instaBlock__gallery-bottom-wrap instaBlock__gallery-wrap">
+                <div class="instaBlock__bigBox">
+                    <div class="instaBlock__content">
+                        <div class="instaBlock__bigBox-wrapper">
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="instaBlock__bigBox">
+                    <div class="instaBlock__content">
+                        <div class="instaBlock__bigBox-wrapper">
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                            <div class="instaBlock__smallBox">
+                                <div class="instaBlock__img"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="instaBlock__showMoreBtn">показать ещё</div>
+        <div class="instaBlock-btn instaBlock-showMore-btn" id="showMoreBtn">показать ещё</div>
+        <div class="instaBlock-btn instaBlock-hide-btn" id="hideBtn">скрыть</div>
     </div>
-</div>
+</section>
 
-<div class="geoBlock">
-    <div class="geoBlock__container container">
-        <h2 class="geoBlock__title blockTitle">география</h2>
+<section class="geoBlock">
+    <div class="geoBlock__container">
+        <h2 class="geoBlock__title block-title">география</h2>
         <div class="geoBlock__map">
             <div id="map"></div>
         </div>
     </div>
-</div>
+</section>
+
 <footer class="footer">
     <div class="footer__container container">
         <div class="footer__wrapper">
             <div class="footer__content">
                 <div class="footer__logo logo">
                     <img src="img/logo.png" alt="logo">
-                    <span class="footer__logoText logoText">гросс маркет</span>
+                    <span class="footer__logo-text logo-text">гросс маркет</span>
                 </div>
-                <a href="#" class="footer__shareBtn shareBtn">поделиться</a>
+                <a href="#" class="footer__share-btn share-btn">поделиться</a>
                 <div class="footer__iconBox">
                     <a href="#"><img src="./img/facebookIcon.svg" alt="facebook"
                                      class="footer__icon footer__iconBox-faceIcon"></a>
@@ -203,7 +270,10 @@
         </div>
     </div>
 </footer>
-<script src="slider/swiper-bundle.min.js"></script>
-<script src="slider/slider.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f75ec07c-34c4-45f4-a38c-680825065362" type="text/javascript"></script>
+<script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+<script src="./js/script.js" type="text/javascript"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>

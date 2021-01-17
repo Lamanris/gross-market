@@ -1,19 +1,26 @@
 let mainSlider = new Swiper('.mainSlider-container', {
-    loop: true,
-    spaceBetween: 200,
+    spaceBetween: 400,
     navigation: {
         nextEl:'.mainSlider-swiper-button-next',
         prevEl:'.mainSlider-swiper-button-prev',
     },
     breakpoints: {
-        900: {
-            spaceBetween:50,
+        400: {
+            spaceBetween: 250,
         },
+        900: {
+            spaceBetween: 200,
+        },
+        1200: {
+            spaceBetween: 100,
+        }
     }
 });
 let vacancySlider = new Swiper('.vacancySlider-container', {
     spaceBetween: 30,
-    slidesPerView: 2,
+    slidesPerView: 1,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
     navigation: {
         nextEl:'.vacancySlider-swiper-button-next',
         prevEl:'.vacancySlider-swiper-button-prev',
@@ -22,7 +29,7 @@ let vacancySlider = new Swiper('.vacancySlider-container', {
         1200: {
             slidesPerView: 3,
         },
-        900: {
+        520: {
             slidesPerView: 2,
         },
     }

@@ -1,4 +1,22 @@
-var myMap;
+let showMoreBtn = document.getElementById('showMoreBtn');
+let hideBtn = document.getElementById('hideBtn');
+let instaBlock__gallery = document.querySelector('.instaBlock__gallery')
+let instaBlock__gallery_bottomWrap = document.querySelector('.instaBlock__gallery-bottom-wrap')
+
+showMoreBtn.addEventListener('click', function () {
+    showMoreBtn.classList.add('active')
+    instaBlock__gallery.classList.add('active')
+    hideBtn.classList.add('active')
+    instaBlock__gallery_bottomWrap.classList.add('active')
+})
+hideBtn.addEventListener('click', function () {
+    showMoreBtn.classList.remove('active')
+    instaBlock__gallery.classList.remove('active')
+    hideBtn.classList.remove('active')
+    instaBlock__gallery_bottomWrap.classList.remove('active')
+})
+
+let myMap;
 ymaps.ready(init);
 
 function init () {
@@ -173,7 +191,6 @@ function init () {
                 // её "ножки" (точки привязки).
                 iconImageOffset: [0, 0]
             })
-            console.log(el)
             myMap.geoObjects
                 .add(myPlacemark)
         })
