@@ -325,6 +325,7 @@ body {
   }
   &__gallery.active {
     max-height: 2000px;
+    transition: ease-in-out 0.6s;
   }
   &__gallery-wrap {
     display: flex;
@@ -340,8 +341,25 @@ body {
   &__bigBox {
     position: relative;
     display: inline-block;
-    padding-left: 48.6%;
-    padding-bottom: 48.6%;
+    padding-left: 48.7%;
+    padding-bottom: 48.7%;
+  }
+  &__wideBox {
+    display: none;
+    position: relative;
+    padding-left: 100%;
+    padding-bottom: 30.6%;
+    margin-top: 30px;
+  }
+
+  &__wideBox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__wideSmallBox {
+    width: 30.6%;
   }
 
   &__bigBox-wrapper {
@@ -369,7 +387,6 @@ body {
   }
 
   &__smallBox {
-    position: relative;
     width: 47.2%;
     height: 47.2%;
   }
@@ -393,7 +410,11 @@ body {
   }
 }
 
-.instaBlock__bigBox-mobile {
+.instaBlock__bigBox-tablet {
+  display: none;
+}
+
+.instaBlock__boxes-mobile {
   display: none;
 }
 

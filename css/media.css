@@ -62,12 +62,34 @@
     min-height: 347px;
   }
 
-  .instaBlock__bigBox-mobile {
+  .instaBlock__gallery {
+    max-height: 748px;
+  }
+
+  .instaBlock__bigBox-tablet {
     display: inline-block;
   }
 
   .instaBlock__bigBox-laptop {
     display: none;
+  }
+
+  .instaBlock__wideBox {
+    display: inline-block;
+    margin-top: 3.8%;
+  }
+
+  .instaBlock__gallery-bottom-wrap {
+    margin-top: 0;
+  }
+
+  .instaBlock-showMore-btn {
+    margin-top: 4%;
+  }
+
+  .instaBlock__bigBox {
+    padding-left: 48%;
+    padding-bottom: 48%;
   }
 
   .geoBlock {
@@ -233,6 +255,56 @@
   .vacancySlider-swiper-slide__img {
     max-height: 274px;
     min-height: 274px;
+  }
+
+  .instaBlock__bigBox {
+    display: none;
+  }
+
+  .instaBlock__wideBox {
+    display: none;
+  }
+
+  .instaBlock__gallery {
+    max-height: 2500px;
+  }
+
+  .instaBlock__gallery.active {
+    max-height: 5000px;
+  }
+
+  .instaBlock__boxes-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .instaBlock__boxes-box {
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .instaBlock__boxes-box-bottom {
+    margin-bottom: 0;
+  }
+
+  .instaBlock-showMore-btn {
+    margin-top: 12px;
+  }
+
+  .instaBlock__boxes-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .instaBlock-showMore-btn {
+    margin-top: 0;
   }
 
   .geoBlock__title {

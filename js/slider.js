@@ -29,8 +29,8 @@ let vacancySlider = new Swiper('.vacancySlider-container', {
         1200: {
             slidesPerView: 3,
         },
-        520: {
+        700: {
             slidesPerView: 2,
-        },
+        }
     }
 });
