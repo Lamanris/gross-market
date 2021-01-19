@@ -504,6 +504,8 @@ body {
   padding: 10px 15px;
   cursor: pointer;
   transition: 0.7s;
+  left: 100px;
+  margin-left: 24px;
 }
 
 .map-btn-fullscreen {
@@ -511,6 +513,9 @@ body {
 }
 
 .map-btn:hover {
+  background-color: #FFDF31;
+}
+.map-btn.active {
   background-color: #FFDF31;
 }
 
